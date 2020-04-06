@@ -53,6 +53,10 @@ disqusShortname = "haillk"  ## 是否开启disqus评论，不要和utteranc同�
     lineNos = true
     style = "github"
   
+[[params.ads]]
+  title = "board"
+  url = ""
+  img = "https://pic.downk.cc/item/5e8b36f9504f4bcb044a9b46.jpg"
 ## 一些奇奇怪怪的配置
 fancybox = true
 google_search = true
