@@ -1,0 +1,33 @@
+language: go
+
+go:
+    - "1.8"
+git:
+    depth: 1
+install: 
+    - wget https://github.com/gohugoio/hugo/releases/download/v0.60.1/hugo_0.60.1_Linux-64bit.deb
+    - sudo dpkg -i hugo*.deb
+   
+script:
+    - hugo -v --gc
+    - cd ./public
+    - git init
+    - git add --all
+    - git commit -m "travis"
+
+
+    
+
+deploy:
+    provider: pages
+    cleanup: true
+    token: $GITHUB_PAGE_KEY
+    on:
+        branch: master
+    local_dir: public
+    repo: haillk/haillk.github.io
+    target_branch: master
+    name: haillk
+    keep_history: true 
+    email: haillk@sina.cn
+    fqdh: haillk.top
