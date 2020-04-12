@@ -93,6 +93,16 @@ Sendq(waitq)存储视图将数据发送到channel而被阻止
 
 **Note**:第（4）（5）步，如果goroutine 是在执行网络io的操作，这个goroutine就不一定就回到这个逻辑处理器了。它实际上会先从逻辑处理器分离，移到集成了网络轮询器的运行时 ，一旦该轮询器指示某个网络读或者写操作已经就绪，对应的 goroutine 就会**重新分配**到逻辑处理器上来完成操作 。
 
+> ### channel阻塞或network I/O情况下的调度
+>
+> 如果G被阻塞在某个channel操作或network I/O操作上时，G会被放置到某个wait队列中，而M会尝试运行下一个runnable的G；如果此时没有runnable的G供m运行，那么m将解绑P，并进入sleep状态。当I/O available或channel操作完成，在wait队列中的G会被唤醒，标记为runnable，放入到某P的队列中，绑定一个M继续执行。
+>
+> ### system call阻塞情况下的调度
+>
+> 如果G被阻塞在某个system call操作上，那么不光G会阻塞，执行该G的M也会解绑P(实质是被sysmon抢走了)，与G一起进入sleep状态。如果此时有idle的M，则P与其绑定继续执行其他G；如果没有idle M，但仍然有其他G要去执行，那么就会创建一个新M。
+>
+> 当阻塞在syscall上的G完成syscall调用后，G会去尝试获取一个可用的P，如果没有可用的P，那么G会被标记为runnable，之前的那个sleep的M将再次进入sleep
+
 ### 并发和并行：
 
 go语言实现并发，创建多个goroutine，调度器会将goroutine分配到逻辑处理器的本地运行队列，逻辑处理器去运行goroutine。如果只有一个逻辑处理器，只会实现并发，不会实现并行。
