@@ -3,7 +3,7 @@ title: 'Gdb多线程调试'
 tags: 
 -
 categories: 
-- linux
+- Linux
 date: "2020-05-07T18:51:01+08:00"
 comment:  true    
 ---

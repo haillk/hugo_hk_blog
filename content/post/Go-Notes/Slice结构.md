@@ -3,7 +3,7 @@ title: 'Slice结构'
 tags: 
 -
 categories: 
-- Golang
+- GoLang
 date: "2020-04-12T15:22:35+08:00"
 comment:  true    
 ---

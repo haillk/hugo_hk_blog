@@ -3,7 +3,7 @@ title: 'Gdb调试coredump文件'
 tags: 
 -
 categories: 
-- linux
+- Linux
 date: "2020-05-07T20:31:29+08:00"
 comment:  true    
 ---

@@ -3,7 +3,7 @@ title: 'Git不能锁定ref'
 tags: 
 -
 categories: 
-- 
+- Git
 date: "2020-04-06T16:16:08+08:00"
 comment:  true    
 ---

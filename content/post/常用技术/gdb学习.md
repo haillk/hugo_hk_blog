@@ -3,7 +3,7 @@ title: 'Gdb学习'
 tags: 
 -
 categories: 
-- 未分组
+- Linux
 date: "2020-04-09T14:39:46+08:00"
 comment:  true    
 ---
