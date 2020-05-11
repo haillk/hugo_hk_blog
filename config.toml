@@ -34,15 +34,15 @@ disqusShortname = "haillk"  ## 是否开启disqus评论，不要和utteranc同�
   # if ['custom.js'], load '/static/js/custom.js' file
 
   # 全局开关，你也可以在每一篇内容的 front matter 中针对单篇内容关闭或开启某些功能
-  toc = false  # 是否开启目录
+  toc = true  # 是否开启目录
 
 ## 友情链接，可以多个
 
-##[[params.links]]
- ## title = "飞雪无情的博客"
- ## name = "飞雪无情的博客"
-##  url = "https://www.flysnow.org/"
-## 配置 utteranc评论,教程参考 https://utteranc.es/
+[[params.links]]
+  title = "github"
+  name = "github"
+  url = "https://github.com/haillk"
+# 配置 utteranc评论,教程参考 https://utteranc.es/
 ## 开启版权声明，协议名字和链接都可以换
 ##[params.cc]
  ##   name = "知识共享署名-非商业性使用-禁止演绎 4.0 国际许可协议"
