@@ -8,6 +8,6 @@ date: "{{ .Date }}"
 comment:  true    
 ---
 
-佛门广大，岂不容一癫僧！
+与你常在
 
 <!--more-->
