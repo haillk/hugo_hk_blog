@@ -2,7 +2,7 @@
 title: "apt-get update和upgrade和dist-upgrade的区别"
 date: 2019-12-07T22:37:54+08:00
 categories:
-- Debian
+- Linux
 tags:
 - apt-get
 - debian

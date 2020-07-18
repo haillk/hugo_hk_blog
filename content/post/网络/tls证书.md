@@ -3,7 +3,7 @@ title: 'Tls证书'
 tags: 
 - 网络
 categories: 
-- 常用技术
+- 网络
 date: "2020-03-13T01:19:56+08:00"
 comment:  true  
 ---

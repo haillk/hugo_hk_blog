@@ -3,7 +3,6 @@ title: "Debian安装python38"
 date: 2019-12-07T22:19:52+08:00
 categories:
 - Python
-- Debian
 tags:
 - python安装
 - debian
