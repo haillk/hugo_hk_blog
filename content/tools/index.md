@@ -7,9 +7,9 @@ type: "tools"
 
 ### 常用工具链接
 
-[个人图床](https://www.haillk.top:8888)
+[个人图床](http://www.haillk.top:8888)
 
-[个人线上python编辑器](https://www.haillk.top:8888)
+[个人线上python编辑器](http://www.haillk.top:8888)
 
 [CClose前置窗口工具](https://chaohershi.github.io/cclose/)
 
