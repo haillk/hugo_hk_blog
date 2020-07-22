@@ -89,7 +89,7 @@ Certificate:
 2. 生成私钥和证书签名申请文件
    1. 生成一个证书签名申请文件，domain.key和domain.csr
 3. 使用CA的私钥对申请文件进行签名
-   1. 利用ca.crt和ca.key对domain.csr签名生成domain.crt
+   1. 利用ca.cert和ca.key对domain.csr签名生成domain.crt
 4. 查看证书内容
    1. 最后生成ca.crt和domain.crt
 

@@ -3,7 +3,7 @@ title: 'Golang生成汇编代码'
 tags: 
 -
 categories: 
-- 未分组
+- GoLang
 date: "2020-05-09T16:15:35+08:00"
 comment:  true    
 ---
